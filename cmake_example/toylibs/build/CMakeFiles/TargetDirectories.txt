@@ -1,0 +1,4 @@
+/Users/zeyuanz/Downloads/toys/toylibs/build/CMakeFiles/rebuild_cache.dir
+/Users/zeyuanz/Downloads/toys/toylibs/build/CMakeFiles/edit_cache.dir
+/Users/zeyuanz/Downloads/toys/toylibs/build/CMakeFiles/print_static.dir
+/Users/zeyuanz/Downloads/toys/toylibs/build/CMakeFiles/print_shared.dir

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/libprint.a CMakeFiles/print_static.dir/src/print.cpp.o CMakeFiles/print_static.dir/src/print_large.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/libprint.a
