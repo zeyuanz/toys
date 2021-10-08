@@ -52,7 +52,7 @@ def main():
     user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'
     headers = {'user-agent': user_agent, 'cookie': cookie}
 
-    for i in range(1,2):
+    for i in range(1,3):
         url = 'https://so.gushiwen.cn/shiwen/default_0AA'+str(i)+'.aspx'
         result_list = parse_content(url, headers, result_list)
 
