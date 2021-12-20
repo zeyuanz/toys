@@ -1,2 +1,10 @@
 **/.DS_Store
-
+.vscode/
+*.json
+*.make
+*.install
+*.o
+*.d
+*.cmake
+*.make
+*.ts
