@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named tax
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+tax: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tax
+.PHONY : tax
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+tax/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tax.dir/build.make CMakeFiles/tax.dir/build
+.PHONY : tax/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tax.dir/build.make CMakeFiles/tax.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tax.dir/build.make CMakeFiles/tax.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tax.dir/build.make CMakeFiles/tax.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/tax.o: src/tax.cpp.o
@@ -158,7 +158,7 @@ src/tax.o: src/tax.cpp.o
 
 # target to build an object file
 src/tax.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tax.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tax.dir/build.make CMakeFiles/tax.dir/src/tax.cpp.o
 .PHONY : src/tax.cpp.o
 
 src/tax.i: src/tax.cpp.i
@@ -166,7 +166,7 @@ src/tax.i: src/tax.cpp.i
 
 # target to preprocess a source file
 src/tax.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tax.dir/build.make CMakeFiles/tax.dir/src/tax.cpp.i
 .PHONY : src/tax.cpp.i
 
 src/tax.s: src/tax.cpp.s
@@ -174,7 +174,7 @@ src/tax.s: src/tax.cpp.s
 
 # target to generate assembly for a file
 src/tax.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/tax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tax.dir/build.make CMakeFiles/tax.dir/src/tax.cpp.s
 .PHONY : src/tax.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
+	@echo "... tax"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
