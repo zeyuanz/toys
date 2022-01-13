@@ -114,7 +114,7 @@ def get_optimal_route(q_table: np.ndarray, n_step: int) -> list:
 
 def main():
     start = time.time()
-    train(q_table, 1000000)
+    train(q_table, 100000)
     end = time.time()
     print(q_table.T)
     print("Time: %.4fs" %(end-start))
