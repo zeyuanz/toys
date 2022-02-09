@@ -1,12 +1,6 @@
 import numpy as np
 import time
 
-#define global variables
-state_size = 5 # 5 positions
-action_size = 2 # forward and backward
-eta = 0.1 # learning rate
-discount = 0.95 # discount factor
-q_table = np.zeros((state_size, action_size))  # q table.shape = (5,2)
 
 def select_action(q_table: np.ndarray, curr_pos: int, randomness: float) -> int:
     ''' select proper action based on q_table and curr_pos
@@ -113,6 +107,12 @@ def get_optimal_route(q_table: np.ndarray, n_step: int) -> list:
     return route
 
 def main():
+    #define global variables
+    state_size = 5 # 5 positions
+    action_size = 2 # forward and backward
+    eta = 0.1 # learning rate
+    discount = 0.95 # discount factor
+    q_table = np.zeros((state_size, action_size))  # q table.shape = (5,2)
     start = time.time()
     train(q_table, 100000)
     end = time.time()
