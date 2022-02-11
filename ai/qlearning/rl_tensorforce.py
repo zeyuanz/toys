@@ -67,17 +67,3 @@ agent = Agent.create(
 runner=Runner(agent=agent, environment=environment)
 runner.run(num_episodes=100)
 runner.run(num_episodes=10, evaluation=True)
-
-'''
-sum_rewards = 0.0
-states = environment.reset()
-internals = agent.initial_internals()
-for i in range(100):
-    actions, internals = agent.act(
-        states=states, internals=internals,
-        independent=True, deterministic=True
-    )
-    states, terminal, reward = environment.execute(actions=actions)
-    sum_rewards += reward
-    print("Iter: %d\tactions: %d\treward: %2.f" %(i+1, actions, sum_rewards), "states: ", states)
-'''
